@@ -1,0 +1,312 @@
+/* ********for desktop****************/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url(bilder/todd-trapani-7pCUY-UoIQ0-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(79, 184, 188, 0.902);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position-y: -450px;
+}
+
+header {
+  background-color: rgba(79, 184, 188, 0.902);
+  min-height: 50px;
+  padding: 20px;
+  margin: 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+h4 {
+  margin: 0px;
+  font-size: 20px;
+  font-family: "alexbrush", Quicksand;
+}
+
+#frissyicon {
+  width: 3%;
+  height: 3%;
+  margin: 0;
+}
+
+#h-1 {
+  margin: 10px;
+  padding: 89px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: rgb(247, 94, 5);
+  text-align: end;
+  font-size: 100px;
+  text-decoration: underline;
+}
+
+.main-sections {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 5px;
+  margin: 5px;
+}
+
+h5 {
+  font-size: 0;
+}
+
+article {
+  width: 50%;
+  height: auto;
+  margin: 10px;
+  border: solid black 5px;
+  background-color: rgb(75, 74, 74, 0.9);
+  color: white;
+  text-align: center;
+}
+
+#article-p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  flex-wrap: wrap;
+  line-height: 2em;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  border-radius: 7%;
+  background-color: #47a6a9;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: large;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn:hover {
+  color: black;
+  cursor: pointer;
+}
+
+span {
+  color: rgba(240, 102, 23);
+  font-size: 300%;
+  font-weight: bold;
+  text-decoration: underline;
+  display: flex;
+  justify-content: center;
+}
+
+#slider-block {
+  background-color: rgba(75, 74, 74, 0);
+  width: 50%;
+  height: 400px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  min-width: 520px;
+  max-width: 520px;
+}
+
+/* sifforna till vänster bestämmer hur länge bilderna står stilla
+innan de åker vidare och hur snabbt det ska gå.
+Left och right: gör typ att det åker långsammare
+siffrorna till höger bestämmer hur mycket av bilden man ska visa och sätter man
+minus innan så åker den till vänster, + åt höger.
+ */
+
+@keyframes slidy {
+  10% {
+    left: 0%;
+  }
+  15% {
+    left: -100%;
+  }
+  35% {
+    left: -100%;
+  }
+  40% {
+    left: -200%;
+  }
+  60% {
+    left: -200%;
+  }
+  65% {
+    left: -300%;
+  }
+  85% {
+    left: -300%;
+  }
+  90% {
+    left: -400%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+
+/* Overflow: hidden;
+har man inte denna så hamnar bilderna
+på en rad */
+
+#slider {
+  overflow: hidden;
+  width: inherit;
+  max-width: 520px;
+  height: 370px;
+  margin: inherit;
+  border: solid black 5px;
+}
+
+#slider figure img {
+  width: 20%;
+  height: 372px;
+}
+
+/* animation slidy infinite:
+ gör så att bildspelet repeterar sig
+  självt */
+
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite;
+  min-width: 230px;
+}
+
+a:link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: black;
+}
+
+#directions {
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+footer {
+  height: 200px;
+  margin: 0;
+  border: solid black 5px;
+  background-color: rgba(79, 184, 188, 0.9);
+  display: flex;
+  flex-direction: row;
+}
+
+#contactinfo {
+  width: 45%;
+  text-align: center;
+  list-style: none;
+}
+
+#open {
+  width: 45%;
+  text-align: center;
+  list-style: none;
+}
+
+@font-face {
+  font-family: Quicksand;
+  src: url(font/Quicksand/Quicksand-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: alexbrush;
+  src: url(font/alex_brush/AlexBrush-Regular.ttf);
+}
+
+/* ******************************************/
+/* for mobile */
+
+@media (max-width: 720px) {
+  body {
+    margin: 0;
+    background-size: 150%;
+    background-position: center;
+  }
+
+  #frissyicon {
+    width: 10%;
+    height: 10%;
+    margin: 0;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  #h-1 {
+    padding: 0;
+  }
+
+  section {
+    padding: 10px;
+  }
+
+  article {
+    height: auto;
+    width: auto;
+  }
+
+  .btn {
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: medium;
+  }
+
+  #contactinfo {
+    width: 70%;
+    text-align: left;
+  }
+
+  #open {
+    width: 70%;
+    text-align: left;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+  }
+
+  #slider-block {
+    width: 80%;
+    min-width: 330px;
+  }
+
+  #slider {
+    min-width: 250px;
+  }
+
+  img {
+    object-fit: cover;
+  }
+
+  .main-sections {
+    padding: 0;
+  }
+}

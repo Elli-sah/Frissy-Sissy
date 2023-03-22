@@ -1,0 +1,244 @@
+/***********************for DESKTOP******************************/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url(bilder/ayo-ogunseinde-\ mediumcrop.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(79, 184, 188, 0.902);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header {
+  background-color: rgba(79, 184, 188, 0.902);
+  min-height: 50px;
+  padding: 20px;
+  margin: 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+#h-1 {
+  padding: 70px;
+}
+
+h4 {
+  margin: 0px;
+  font-size: 20px;
+  font-family: "alexbrush", Quicksand;
+}
+
+h5 {
+  font-size: 0;
+}
+
+#frissyicon {
+  width: 2%;
+  height: 2%;
+  margin: 0;
+}
+
+h1 {
+  color: rgba(240, 102, 23);
+  text-align: center;
+  font-size: 85px;
+  text-decoration: underline;
+}
+
+.h3-article {
+  font-family: "alexbrush", Quicksand;
+  font-size: 30px;
+}
+
+article {
+  width: 80%;
+  height: auto;
+  margin: 3vw;
+  border: solid black 5px;
+  background-color: rgb(75, 74, 74, 0.9);
+  color: white;
+  text-align: center;
+}
+
+#article {
+  display: flex;
+  justify-content: center;
+}
+
+.treat-price {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  justify-content: space-around;
+}
+
+.treatments {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 2em;
+  width: 70%;
+}
+
+.price {
+  display: flex;
+  width: 15%;
+  line-height: 2em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.line {
+  margin: 0 10% 0 10%;
+  width: 80%;
+  height: 2px;
+  background-color: rgba(240, 102, 23);
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  border-radius: 7%;
+  background-color: #47a6a9;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: large;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn:hover {
+  color: black;
+  cursor: pointer;
+}
+
+a:link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: black;
+}
+
+#directions {
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+footer {
+  height: 200px;
+  margin: 0;
+  border: solid black 5px;
+  background-color: rgba(79, 184, 188, 0.9);
+  display: flex;
+  flex-direction: row;
+}
+
+#contactinfo {
+  width: 45%;
+  margin: 5px;
+  text-align: center;
+  list-style: none;
+}
+
+#open {
+  width: 45%;
+  text-align: center;
+  list-style: none;
+}
+
+@font-face {
+  font-family: alexbrush;
+  src: url(font/alex_brush/AlexBrush-Regular.ttf);
+}
+
+@font-face {
+  font-family: Quicksand;
+  src: url(font/Quicksand/Quicksand-VariableFont_wght.ttf);
+}
+
+/* ******************************************/
+/* for mobile */
+
+@media (max-width: 720px) {
+  body {
+    margin: 0;
+  }
+
+  #frissyicon {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  article {
+    height: auto;
+    width: 90%;
+  }
+
+  .treatments {
+    display: flex;
+    line-height: 2em;
+    max-width: fit-content;
+  }
+
+  .price {
+    display: flex;
+    width: auto;
+    line-height: 2em;
+  }
+
+  ul {
+    padding: 0;
+    margin-left: 0;
+  }
+
+  .btn {
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: medium;
+  }
+
+  .h2-foot {
+    margin: 2px;
+  }
+
+  #contactinfo {
+    width: 70%;
+    text-align: left;
+    margin: 5;
+    margin-left: 40px;
+  }
+
+  #open {
+    width: 70%;
+    text-align: left;
+    margin: 5px;
+    margin-left: 40px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+  }
+
+  .h3-foot {
+    margin: 10px 0 10px 0;
+  }
+}
